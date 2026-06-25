@@ -235,8 +235,8 @@ This project serves as a comprehensive demonstration of production-ready softwar
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/whatsapp-commerce-platform.git
-   cd whatsapp-commerce-platform
+   git clone https://github.com/JAS-1123/whatsapp-order-bot.git
+   cd whatsapp-order-bot
    ```
 
 2. Install backend dependencies:
@@ -253,6 +253,7 @@ This project serves as a comprehensive demonstration of production-ready softwar
 ### Environment Setup
 
 Create a `.env` file in the root directory:
+
 ```env
 DATABASE_URL="postgres://user:pass@host/db"
 WHATSAPP_TOKEN="your_meta_access_token"
@@ -264,6 +265,7 @@ ADMIN_API_KEY="your_secure_admin_key"
 ### Database Setup
 
 Run Prisma migrations to initialize the Neon PostgreSQL database:
+
 ```bash
 npx prisma migrate dev --name init
 npx prisma generate
@@ -272,17 +274,21 @@ npx prisma generate
 ### Run Application
 
 Start the backend server (runs on port 3000):
+
 ```bash
 npm run dev
 ```
 
 Start Ngrok for webhooks (in a new terminal):
+
 ```bash
 ngrok http 3000
 ```
-*Configure this Ngrok URL in your Meta Developer Dashboard.*
+
+Configure this Ngrok URL in your Meta Developer Dashboard.
 
 Start the Admin Dashboard (runs on port 3001):
+
 ```bash
 cd admin-dashboard
 npm run dev
@@ -290,12 +296,19 @@ npm run dev
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Authors
 
-**Built with passion by a full-stack engineer focused on building scalable, event-driven systems and beautiful user experiences.**
+Built with passion by two software engineers focused on scalable backend systems, conversational commerce, and modern full-stack development.
 
-- 💼 **LinkedIn:** [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- 🐙 **GitHub:** [Your GitHub](https://github.com/yourusername)
-- 🌐 **Portfolio:** [Your Website](https://yourwebsite.com)
+### GitHub Profiles
 
-*If you found this project interesting, feel free to star the repository or reach out for a chat about system design and backend architecture!*
+- **Ishan Tripathi** — https://github.com/ishantripathi64
+- **JAS-1123** — https://github.com/JAS-1123
+
+### Repository
+
+- **WhatsApp Order Bot** — https://github.com/JAS-1123/whatsapp-order-bot
+
+---
+
+If you found this project interesting, feel free to ⭐ star the repository. Contributions, feedback, and suggestions are always welcome!
